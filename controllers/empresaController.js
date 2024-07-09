@@ -14,7 +14,7 @@ const searchAndScrapeCompanies = async (req, res) => {
       "atividade_principal": [],
       "natureza_juridica": [],
       "uf": ["BA"],
-      "municipio": ["PORTO SEGURO", "SANTA CRUZ CABRALIA"],
+      "municipio": [],
       "bairro": [],
       "situacao_cadastral": "ATIVA",
       "cep": [],
