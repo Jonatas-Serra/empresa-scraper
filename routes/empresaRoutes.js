@@ -1,7 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const { searchAndScrapeCompanies } = require('../controllers/empresaController');
+const { searchAndScrapeCompanies, getSavedCompanies, getCompaniesCount } = require('../controllers/empresaController');
 
-router.post('/scrape', searchAndScrapeCompanies);
+router.post('/', searchAndScrapeCompanies);
+router.get('/', getSavedCompanies);
+router.get('/count', getCompaniesCount);
 
 module.exports = router;

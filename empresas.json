@@ -1,0 +1,878 @@
+[
+  {
+    "cnpj": "55748450000159",
+    "razaoSocial": "55.748.450 SAMUEL SANTANA SILVA",
+    "nomeFantasia": "-",
+    "email": "ABERTURA@MAISMEI.COM.BR",
+    "telefones": [
+      "73 998080457"
+    ],
+    "dataDeAbertura": "01/07/2024",
+    "_id": "668cbc35239289e4d5530745",
+    "__v": 0
+  },
+  {
+    "cnpj": "55742201000156",
+    "razaoSocial": "55.742.201 ADART VASCONCELOS CARDOSO",
+    "nomeFantasia": "-",
+    "email": "ADARTVASCONCELOS517@GMAIL.COM",
+    "telefones": [
+      "73 981460067"
+    ],
+    "dataDeAbertura": "01/07/2024",
+    "_id": "668cbc36239289e4d5530748",
+    "__v": 0
+  },
+  {
+    "cnpj": "55775917000150",
+    "razaoSocial": "55.775.917 RENATO RODRIGUES COSTA",
+    "nomeFantasia": "-",
+    "email": "RRCCOSTA83@GMAIL.COM",
+    "telefones": [
+      "31 997591725"
+    ],
+    "dataDeAbertura": "03/07/2024",
+    "_id": "668cbc39239289e4d553074b",
+    "__v": 0
+  },
+  {
+    "cnpj": "55796094000149",
+    "razaoSocial": "55.796.094 TALITA BATISTA DOS SANTOS",
+    "nomeFantasia": "-",
+    "email": "UESLEISOARESCEZARANO@GMAIL.COM",
+    "telefones": [
+      "73 982156581"
+    ],
+    "dataDeAbertura": "04/07/2024",
+    "_id": "668cbc39239289e4d553074e",
+    "__v": 0
+  },
+  {
+    "cnpj": "55813060000115",
+    "razaoSocial": "55.813.060 MARCO ANTONIO ALVES MATOSO",
+    "nomeFantasia": "-",
+    "email": "MARCOMATOSO23@GMAIL.COM",
+    "telefones": [
+      "73 981644060"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc3b239289e4d5530751",
+    "__v": 0
+  },
+  {
+    "cnpj": "55810583000108",
+    "razaoSocial": "55.810.583 LARYSSA TELES SOUZA",
+    "nomeFantasia": "-",
+    "email": "SMARTELES2021@GMAIL.COM",
+    "telefones": [
+      "73 999187024"
+    ],
+    "dataDeAbertura": "04/07/2024",
+    "_id": "668cbc3c239289e4d5530754",
+    "__v": 0
+  },
+  {
+    "cnpj": "55814903000106",
+    "razaoSocial": "55.814.903 WELLINGTON RICHERD DINIZ",
+    "nomeFantasia": "-",
+    "email": "WELLINGTONDINIZ45@HOTMAIL.COM",
+    "telefones": [
+      "73 999215080"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc42239289e4d5530757",
+    "__v": 0
+  },
+  {
+    "cnpj": "55800886000140",
+    "razaoSocial": "55.800.886 MARCOS DE JESUS SANTOS",
+    "nomeFantasia": "-",
+    "email": "MARCOSDEJESUSSANTOS563@GMAIL.COM",
+    "telefones": [
+      "73 999143388"
+    ],
+    "dataDeAbertura": "04/07/2024",
+    "_id": "668cbc42239289e4d553075a",
+    "__v": 0
+  },
+  {
+    "cnpj": "55814007000139",
+    "razaoSocial": "55.814.007 SUELEN DA SILVA MUSSA",
+    "nomeFantasia": "-",
+    "email": "GUIASUMUSSA@OUTLOOK.COM",
+    "telefones": [
+      "73 999042906"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc45239289e4d553075d",
+    "__v": 0
+  },
+  {
+    "cnpj": "55827888000122",
+    "razaoSocial": "55.827.888 LUCAS DA SILVA ALMEIDA",
+    "nomeFantasia": "-",
+    "email": "LUCASALMEIDA8025@GMAIL.COM",
+    "telefones": [
+      "73 988260928"
+    ],
+    "dataDeAbertura": "06/07/2024",
+    "_id": "668cbc45239289e4d5530760",
+    "__v": 0
+  },
+  {
+    "cnpj": "55833085000180",
+    "razaoSocial": "55.833.085 NATALIA DE SOUZA PARADELA CUNHA",
+    "nomeFantasia": "-",
+    "email": "NATALIAPARADELA@GMAIL.COM",
+    "telefones": [
+      "73 998584073"
+    ],
+    "dataDeAbertura": "07/07/2024",
+    "_id": "668cbc47239289e4d5530763",
+    "__v": 0
+  },
+  {
+    "cnpj": "55844284000194",
+    "razaoSocial": "55.844.284 FRANCISCO OLISSCO DE ALBUQUERQUE FILHO",
+    "nomeFantasia": "-",
+    "email": "CHICOALBUQUERQUE8@GMAIL.COM",
+    "telefones": [
+      "11 998751106"
+    ],
+    "dataDeAbertura": "08/07/2024",
+    "_id": "668cbc48239289e4d5530766",
+    "__v": 0
+  },
+  {
+    "cnpj": "55834461000151",
+    "razaoSocial": "55.834.461 JOSE DE JESUS SILVA",
+    "nomeFantasia": "-",
+    "email": "TAILANFERREIRA.95@GMAIL.COM",
+    "telefones": [
+      "73 999332434"
+    ],
+    "dataDeAbertura": "07/07/2024",
+    "_id": "668cbc4a239289e4d5530769",
+    "__v": 0
+  },
+  {
+    "cnpj": "55744217000106",
+    "razaoSocial": "55.744.217 MAILAN DOS SANTOS REIS",
+    "nomeFantasia": "-",
+    "email": "MAYLANREIS335@GMAIL.COM",
+    "telefones": [
+      "73 998332968"
+    ],
+    "dataDeAbertura": "01/07/2024",
+    "_id": "668cbc4b239289e4d553076c",
+    "__v": 0
+  },
+  {
+    "cnpj": "55821356000188",
+    "razaoSocial": "55.821.356 ALINE DAYANE SILVA VIVAS",
+    "nomeFantasia": "-",
+    "email": "ADS.VIVAS@GMAIL.COM",
+    "telefones": [
+      "73 998163233"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc4d239289e4d553076f",
+    "__v": 0
+  },
+  {
+    "cnpj": "55765294000134",
+    "razaoSocial": "55.765.294 CAIO DE JESUS REIS",
+    "nomeFantasia": "-",
+    "email": "REISC8759@GMAIL.COM",
+    "telefones": [
+      "73 999049177"
+    ],
+    "dataDeAbertura": "02/07/2024",
+    "_id": "668cbc4e239289e4d5530772",
+    "__v": 0
+  },
+  {
+    "cnpj": "55777337000100",
+    "razaoSocial": "55.777.337 LUCAS JESUS DE OLIVEIRA",
+    "nomeFantasia": "-",
+    "email": "FOLHABERBERTCONTABILIDADE@GMAIL.COM",
+    "telefones": [
+      "73 991409102"
+    ],
+    "dataDeAbertura": "03/07/2024",
+    "_id": "668cbc50239289e4d5530775",
+    "__v": 0
+  },
+  {
+    "cnpj": "55741935000110",
+    "razaoSocial": "55.741.935 EDSON NASCIMENTO",
+    "nomeFantasia": "-",
+    "email": "NADCIMENTOEDSON551@GMAIL.COM",
+    "telefones": [
+      "22 981668008"
+    ],
+    "dataDeAbertura": "01/07/2024",
+    "_id": "668cbc50239289e4d5530778",
+    "__v": 0
+  },
+  {
+    "cnpj": "55839873000184",
+    "razaoSocial": "55.839.873 MARIA LUIZA SANTOS DE OLIVEIRA",
+    "nomeFantasia": "-",
+    "email": "MARIALUIZA37391@GMAIL.COM",
+    "telefones": [
+      "73 988992301"
+    ],
+    "dataDeAbertura": "08/07/2024",
+    "_id": "668cbc52239289e4d553077b",
+    "__v": 0
+  },
+  {
+    "cnpj": "55772878000137",
+    "razaoSocial": "55.772.878 RODRIGO PRADIO SANTOS",
+    "nomeFantasia": "-",
+    "email": "RODRIGOPRADIO7441@GMAIL.COM",
+    "telefones": [
+      "73 991819265"
+    ],
+    "dataDeAbertura": "02/07/2024",
+    "_id": "668cbc53239289e4d553077e",
+    "__v": 0
+  },
+  {
+    "cnpj": "55753237000135",
+    "razaoSocial": "55.753.237 CARLOS ALBERTO MAGALHAES RODRIGUES",
+    "nomeFantasia": "-",
+    "email": "CONNECT.SENNA@HOTMAIL.COM",
+    "telefones": [
+      "73 991970622"
+    ],
+    "dataDeAbertura": "01/07/2024",
+    "_id": "668cbc55239289e4d5530781",
+    "__v": 0
+  },
+  {
+    "cnpj": "55746920000145",
+    "razaoSocial": "55.746.920 JAQUELINE SENNA DOS SANTOS",
+    "nomeFantasia": "-",
+    "email": "JAQUELINEOLIVEIRA469@GMAIL.COM",
+    "telefones": [
+      "73 998387402"
+    ],
+    "dataDeAbertura": "01/07/2024",
+    "_id": "668cbc55239289e4d5530784",
+    "__v": 0
+  },
+  {
+    "cnpj": "55757859000131",
+    "razaoSocial": "55.757.859 CLICIA OLIVEIRA COSTA",
+    "nomeFantasia": "-",
+    "email": "CLICIAO551@GMAIL.COM",
+    "telefones": [
+      "73 998601408"
+    ],
+    "dataDeAbertura": "02/07/2024",
+    "_id": "668cbc58239289e4d5530787",
+    "__v": 0
+  },
+  {
+    "cnpj": "55758454000118",
+    "razaoSocial": "55.758.454 FABIO SOARES DA SILVA",
+    "nomeFantasia": "-",
+    "email": "FS1794327@GMAIL.COM",
+    "telefones": [
+      "73 998368573"
+    ],
+    "dataDeAbertura": "02/07/2024",
+    "_id": "668cbc58239289e4d553078a",
+    "__v": 0
+  },
+  {
+    "cnpj": "55832589000186",
+    "razaoSocial": "55.832.589 AQUILA LOPES DE JESUS",
+    "nomeFantasia": "-",
+    "email": "ALOPESGUIABPS@GMAIL.COM",
+    "telefones": [
+      "73 981506464"
+    ],
+    "dataDeAbertura": "07/07/2024",
+    "_id": "668cbc5a239289e4d553078d",
+    "__v": 0
+  },
+  {
+    "cnpj": "55793070000136",
+    "razaoSocial": "55.793.070 HENRIQUE SILVA DE JESUS",
+    "nomeFantasia": "-",
+    "email": "KAISEMEDINO@ICLOUD.COM",
+    "telefones": [
+      "71 999017927"
+    ],
+    "dataDeAbertura": "03/07/2024",
+    "_id": "668cbc5b239289e4d5530790",
+    "__v": 0
+  },
+  {
+    "cnpj": "55821271000108",
+    "razaoSocial": "55.821.271 QUEILLA DOS SANTOS GONSALVES",
+    "nomeFantasia": "-",
+    "email": "GARCIABA10@GMAIL.COM",
+    "telefones": [
+      "73 981656831"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc5d239289e4d5530793",
+    "__v": 0
+  },
+  {
+    "cnpj": "55801899000133",
+    "razaoSocial": "55.801.899 GABRIEL ANJOS DE SOUZA",
+    "nomeFantasia": "-",
+    "email": "GTGABRIEL.AZUOS@GMAIL.COM",
+    "telefones": [
+      "34 991627967"
+    ],
+    "dataDeAbertura": "04/07/2024",
+    "_id": "668cbc5d239289e4d5530796",
+    "__v": 0
+  },
+  {
+    "cnpj": "55834288000191",
+    "razaoSocial": "55.834.288 HELENA GABRIELLE GUIMARAES SILVA",
+    "nomeFantasia": "-",
+    "email": "HELENAGUIMARAES10304@GMAIL.COM",
+    "telefones": [
+      "73 988833548"
+    ],
+    "dataDeAbertura": "07/07/2024",
+    "_id": "668cbc5f239289e4d5530799",
+    "__v": 0
+  },
+  {
+    "cnpj": "55779665000137",
+    "razaoSocial": "55.779.665 LUIS CARLOS BARBOSA JUNIOR",
+    "nomeFantasia": "-",
+    "email": "CDCARLOSJUNIOR2019@GMAIL.COM",
+    "telefones": [
+      "73 988593359"
+    ],
+    "dataDeAbertura": "03/07/2024",
+    "_id": "668cbc60239289e4d553079c",
+    "__v": 0
+  },
+  {
+    "cnpj": "55825739000124",
+    "razaoSocial": "55.825.739 AMILTON SANTOS DA SILVA",
+    "nomeFantasia": "-",
+    "email": "DEMILTON774@GMAIL.COM",
+    "telefones": [
+      "73 999064505"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc62239289e4d553079f",
+    "__v": 0
+  },
+  {
+    "cnpj": "55791309000139",
+    "razaoSocial": "55.791.309 GILMAR SILVA RAMOS",
+    "nomeFantasia": "-",
+    "email": "GILMARRAMOS101@GMAIL.COM",
+    "telefones": [
+      "73 991149102"
+    ],
+    "dataDeAbertura": "03/07/2024",
+    "_id": "668cbc63239289e4d55307a2",
+    "__v": 0
+  },
+  {
+    "cnpj": "55813707000109",
+    "razaoSocial": "55.813.707 VITORIA SANTANNA",
+    "nomeFantasia": "-",
+    "email": "SANTANNAVITORIA30@GMAIL.COM",
+    "telefones": [
+      "48 999333510"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc65239289e4d55307a5",
+    "__v": 0
+  },
+  {
+    "cnpj": "55820692000106",
+    "razaoSocial": "55.820.692 HELOISA SILVA DOS SANTOS",
+    "nomeFantasia": "-",
+    "email": "DOCEPROPOSITOPS@GMAIL.COM",
+    "telefones": [
+      "73 982442872"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc65239289e4d55307a8",
+    "__v": 0
+  },
+  {
+    "cnpj": "55836624000135",
+    "razaoSocial": "55.836.624 FLAVIO PEREIRA DA PENA",
+    "nomeFantasia": "-",
+    "email": "FLAVIOPSG1@HOTMAIL.COM",
+    "telefones": [
+      "73 988248309"
+    ],
+    "dataDeAbertura": "08/07/2024",
+    "_id": "668cbc68239289e4d55307ab",
+    "__v": 0
+  },
+  {
+    "cnpj": "55798496000182",
+    "razaoSocial": "55.798.496 GABRIEL VALVERDE MENEZES BOMFIM",
+    "nomeFantasia": "-",
+    "email": "VALVERDEGESTORDETRAFEGO@GMAIL.COM",
+    "telefones": [
+      "73 991418846"
+    ],
+    "dataDeAbertura": "04/07/2024",
+    "_id": "668cbc68239289e4d55307ae",
+    "__v": 0
+  },
+  {
+    "cnpj": "55742536000174",
+    "razaoSocial": "55.742.536 FRANKLIN JOSE ROJAS RIVERO",
+    "nomeFantasia": "-",
+    "email": "JOSEROJASFRANKLINJOSE@GMAIL.COM",
+    "telefones": [
+      "73 998205093"
+    ],
+    "dataDeAbertura": "01/07/2024",
+    "_id": "668cbc6a239289e4d55307b1",
+    "__v": 0
+  },
+  {
+    "cnpj": "55737919000154",
+    "razaoSocial": "55.737.919 MOHABY SILVA SANTOS",
+    "nomeFantasia": "-",
+    "email": "MOHABY.LIVE2022@GMAIL.COM",
+    "telefones": [
+      "73 991235572"
+    ],
+    "dataDeAbertura": "01/07/2024",
+    "_id": "668cbc6b239289e4d55307b4",
+    "__v": 0
+  },
+  {
+    "cnpj": "55739921000162",
+    "razaoSocial": "55.739.921 AYMORE BARROS PACHECO",
+    "nomeFantasia": "-",
+    "email": "CASAOCEANTRANCOSO2024@GMAIL.COM",
+    "telefones": [
+      "73 999210643"
+    ],
+    "dataDeAbertura": "01/07/2024",
+    "_id": "668cbc6d239289e4d55307b7",
+    "__v": 0
+  },
+  {
+    "cnpj": "55821868000144",
+    "razaoSocial": "55.821.868 JOICE APARECIDA FERREIRA",
+    "nomeFantasia": "-",
+    "email": "JOICEAPA18@GMAIL.COM",
+    "telefones": [
+      "73 999391686"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc6e239289e4d55307ba",
+    "__v": 0
+  },
+  {
+    "_id": "668cbc62239289e4d553079f",
+    "cnpj": "55825739000124",
+    "razaoSocial": "55.825.739 AMILTON SANTOS DA SILVA",
+    "nomeFantasia": "-",
+    "email": "DEMILTON774@GMAIL.COM",
+    "telefones": [
+      "73 999064505"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "__v": 0
+  },
+  {
+    "_id": "668cbc5a239289e4d553078d",
+    "cnpj": "55832589000186",
+    "razaoSocial": "55.832.589 AQUILA LOPES DE JESUS",
+    "nomeFantasia": "-",
+    "email": "ALOPESGUIABPS@GMAIL.COM",
+    "telefones": [
+      "73 981506464"
+    ],
+    "dataDeAbertura": "07/07/2024",
+    "__v": 0
+  },
+  {
+    "_id": "668cbc5f239289e4d5530799",
+    "cnpj": "55834288000191",
+    "razaoSocial": "55.834.288 HELENA GABRIELLE GUIMARAES SILVA",
+    "nomeFantasia": "-",
+    "email": "HELENAGUIMARAES10304@GMAIL.COM",
+    "telefones": [
+      "73 988833548"
+    ],
+    "dataDeAbertura": "07/07/2024",
+    "__v": 0
+  },
+  {
+    "_id": "668cbc68239289e4d55307ab",
+    "cnpj": "55836624000135",
+    "razaoSocial": "55.836.624 FLAVIO PEREIRA DA PENA",
+    "nomeFantasia": "-",
+    "email": "FLAVIOPSG1@HOTMAIL.COM",
+    "telefones": [
+      "73 988248309"
+    ],
+    "dataDeAbertura": "08/07/2024",
+    "__v": 0
+  },
+  {
+    "_id": "668cbc5d239289e4d5530796",
+    "cnpj": "55801899000133",
+    "razaoSocial": "55.801.899 GABRIEL ANJOS DE SOUZA",
+    "nomeFantasia": "-",
+    "email": "GTGABRIEL.AZUOS@GMAIL.COM",
+    "telefones": [
+      "34 991627967"
+    ],
+    "dataDeAbertura": "04/07/2024",
+    "__v": 0
+  },
+  {
+    "_id": "668cbc65239289e4d55307a5",
+    "cnpj": "55813707000109",
+    "razaoSocial": "55.813.707 VITORIA SANTANNA",
+    "nomeFantasia": "-",
+    "email": "SANTANNAVITORIA30@GMAIL.COM",
+    "telefones": [
+      "48 999333510"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "__v": 0
+  },
+  {
+    "cnpj": "55751791000183",
+    "razaoSocial": "55.751.791 VERONICA JUNQUEIRA RINALDI",
+    "nomeFantasia": "-",
+    "email": "VERONICA.J.RINALDI@GMAIL.COM",
+    "telefones": [
+      "73 991681648"
+    ],
+    "dataDeAbertura": "01/07/2024",
+    "_id": "668cbc76239289e4d55307c3",
+    "__v": 0
+  },
+  {
+    "cnpj": "55748603000168",
+    "razaoSocial": "55.748.603 DUILIO RAMOS DOS SANTOS",
+    "nomeFantasia": "-",
+    "email": "DUILIOSANTOS015@GMAIL.COM",
+    "telefones": [
+      "73 998011159"
+    ],
+    "dataDeAbertura": "01/07/2024",
+    "_id": "668cbc76239289e4d55307c6",
+    "__v": 0
+  },
+  {
+    "cnpj": "55738519000163",
+    "razaoSocial": "55.738.519 AMANDA DE JESUS SANTOS",
+    "nomeFantasia": "-",
+    "email": "AMANDAASANTOS0107@GMAIL.COM",
+    "telefones": [
+      "73 998036856"
+    ],
+    "dataDeAbertura": "01/07/2024",
+    "_id": "668cbc79239289e4d55307c9",
+    "__v": 0
+  },
+  {
+    "cnpj": "55745393000154",
+    "razaoSocial": "55.745.393 GUILHERME QUINTO DE SOUZA",
+    "nomeFantasia": "-",
+    "email": "GUILHERMEQUINTO.S@HOTMAIL.COM",
+    "telefones": [
+      "73 988861101"
+    ],
+    "dataDeAbertura": "01/07/2024",
+    "_id": "668cbc79239289e4d55307cc",
+    "__v": 0
+  },
+  {
+    "cnpj": "55796850000130",
+    "razaoSocial": "55.796.850 LAYS GABRIELLA GONCALVES DUARTE",
+    "nomeFantasia": "-",
+    "email": "LAYSGDUARTE@OUTLOOK.COM",
+    "telefones": [
+      "73 999832886"
+    ],
+    "dataDeAbertura": "04/07/2024",
+    "_id": "668cbc7b239289e4d55307cf",
+    "__v": 0
+  },
+  {
+    "cnpj": "55816215000177",
+    "razaoSocial": "55.816.215 BRISA SANTANA NOBRE",
+    "nomeFantasia": "-",
+    "email": "BRISAHABILITAR@GMAIL.COM.BR",
+    "telefones": [
+      "73 988350868"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc7c239289e4d55307d2",
+    "__v": 0
+  },
+  {
+    "cnpj": "55777773000170",
+    "razaoSocial": "55.777.773 MAGNEJANIO BISPO DE SOUZA",
+    "nomeFantasia": "-",
+    "email": "MAGNECARP@HOTMAIL.COM",
+    "telefones": [
+      "73 999793026"
+    ],
+    "dataDeAbertura": "03/07/2024",
+    "_id": "668cbc7e239289e4d55307d5",
+    "__v": 0
+  },
+  {
+    "cnpj": "55819884000100",
+    "razaoSocial": "55.819.884 LUIS CARLOS CERQUEIRA GOMES",
+    "nomeFantasia": "-",
+    "email": "LUISCARLOSCARPIN@GMAIL.COM",
+    "telefones": [
+      "73 981946564"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc7e239289e4d55307d8",
+    "__v": 0
+  },
+  {
+    "cnpj": "55827145000152",
+    "razaoSocial": "55.827.145 JULIANO VIEIRA",
+    "nomeFantasia": "-",
+    "email": "JV.SHOW98@GMAIL.COM",
+    "telefones": [
+      "73 999320237"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc81239289e4d55307db",
+    "__v": 0
+  },
+  {
+    "cnpj": "55810484000126",
+    "razaoSocial": "55.810.484 ALAN FERREIRA MODESTO",
+    "nomeFantasia": "-",
+    "email": "MODESTOALAN082@GMAIL.COM",
+    "telefones": [
+      "73 999157318"
+    ],
+    "dataDeAbertura": "04/07/2024",
+    "_id": "668cbc81239289e4d55307de",
+    "__v": 0
+  },
+  {
+    "cnpj": "55792960000123",
+    "razaoSocial": "55.792.960 ANILSON SOUZA LOPES",
+    "nomeFantasia": "-",
+    "email": "ANILSON_LOPES@HOTMAIL.COM",
+    "telefones": [
+      "73 981171958"
+    ],
+    "dataDeAbertura": "03/07/2024",
+    "_id": "668cbc83239289e4d55307e1",
+    "__v": 0
+  },
+  {
+    "cnpj": "55826208000156",
+    "razaoSocial": "55.826.208 REGIANE DOS SANTOS",
+    "nomeFantasia": "-",
+    "email": "REGYCAVALCANTE@HOTMAIL.COM",
+    "telefones": [
+      "73 988843230"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc84239289e4d55307e4",
+    "__v": 0
+  },
+  {
+    "cnpj": "55794264000156",
+    "razaoSocial": "55.794.264 WILLIAN SILVA CARVALHO",
+    "nomeFantasia": "-",
+    "email": "WILLIAN.KHALIFA4I20@GMAIL.COM",
+    "telefones": [
+      "73 981024649"
+    ],
+    "dataDeAbertura": "03/07/2024",
+    "_id": "668cbc86239289e4d55307e7",
+    "__v": 0
+  },
+  {
+    "cnpj": "55811347000106",
+    "razaoSocial": "55.811.347 GILMAR SOUZA SANTOS JUNIOR",
+    "nomeFantasia": "-",
+    "email": "JAFRUTASNATURAL@GMAIL.COM",
+    "telefones": [
+      "73 991255853"
+    ],
+    "dataDeAbertura": "04/07/2024",
+    "_id": "668cbc86239289e4d55307ea",
+    "__v": 0
+  },
+  {
+    "cnpj": "55796222000154",
+    "razaoSocial": "55.796.222 HUALLISON GOMES DE SOUZA",
+    "nomeFantasia": "-",
+    "email": "HUALLISONGSOUZA@GMAIL.COM",
+    "telefones": [
+      "73 988971853"
+    ],
+    "dataDeAbertura": "04/07/2024",
+    "_id": "668cbc88239289e4d55307ed",
+    "__v": 0
+  },
+  {
+    "cnpj": "55805590000111",
+    "razaoSocial": "55.805.590 CARLOS CERQUEIRA FERREIRA",
+    "nomeFantasia": "-",
+    "email": "FERREIRAACARLLO@GMAIL.COM",
+    "telefones": [
+      "33 997337227"
+    ],
+    "dataDeAbertura": "04/07/2024",
+    "_id": "668cbc89239289e4d55307f0",
+    "__v": 0
+  },
+  {
+    "cnpj": "55821803000107",
+    "razaoSocial": "55.821.803 MARIA NILDES ALCANTARA SANTOS",
+    "nomeFantasia": "-",
+    "email": "NILDESMARIA.2029@GMAIL.COM",
+    "telefones": [
+      "73 998248239"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc8b239289e4d55307f3",
+    "__v": 0
+  },
+  {
+    "cnpj": "55741934000176",
+    "razaoSocial": "55.741.934 LORRANY GAMA VIEIRA",
+    "nomeFantasia": "-",
+    "email": "GAMALORRANY7@GMAIL.COM",
+    "telefones": [
+      "73 999233549"
+    ],
+    "dataDeAbertura": "01/07/2024",
+    "_id": "668cbc8b239289e4d55307f6",
+    "__v": 0
+  },
+  {
+    "cnpj": "55752914000109",
+    "razaoSocial": "55.752.914 WILTON BATISTA DE JESUS",
+    "nomeFantasia": "-",
+    "email": "WACONSTRU@OUTLOOK.COM.BR",
+    "telefones": [
+      "73 981926326"
+    ],
+    "dataDeAbertura": "01/07/2024",
+    "_id": "668cbc8e239289e4d55307f9",
+    "__v": 0
+  },
+  {
+    "cnpj": "55793267000175",
+    "razaoSocial": "55.793.267 IVANI LIMA DOS SANTOS",
+    "nomeFantasia": "-",
+    "email": "NI.LIMABA@HOTMAIL.COM",
+    "telefones": [
+      "73 991199072"
+    ],
+    "dataDeAbertura": "03/07/2024",
+    "_id": "668cbc8e239289e4d55307fc",
+    "__v": 0
+  },
+  {
+    "cnpj": "55793302000156",
+    "razaoSocial": "55.793.302 ZORA YONARA DOS SANTOS SILVA",
+    "nomeFantasia": "-",
+    "email": "ZORAMILA@HOTMAIL.COM",
+    "telefones": [
+      "73 999465788"
+    ],
+    "dataDeAbertura": "03/07/2024",
+    "_id": "668cbc90239289e4d55307ff",
+    "__v": 0
+  },
+  {
+    "cnpj": "55773214000192",
+    "razaoSocial": "55.773.214 RENILDO ALVES DOS SANTOS",
+    "nomeFantasia": "-",
+    "email": "AURYNHA2020@HOTMAIL.COM",
+    "telefones": [
+      "73 981728560"
+    ],
+    "dataDeAbertura": "02/07/2024",
+    "_id": "668cbc91239289e4d5530802",
+    "__v": 0
+  },
+  {
+    "cnpj": "55815978000101",
+    "razaoSocial": "55.815.978 ADRIELE DE JESUS ARAGAO",
+    "nomeFantasia": "-",
+    "email": "ADRIELEARAGAO79@GMAIL.COM",
+    "telefones": [
+      "73 991428831"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc93239289e4d5530805",
+    "__v": 0
+  },
+  {
+    "cnpj": "55782802000192",
+    "razaoSocial": "55.782.802 RAVI CAMPECHE NASCIMENTO",
+    "nomeFantasia": "-",
+    "email": "RAVIHOTMART7@GMAIL.COM",
+    "telefones": [
+      "73 999387964"
+    ],
+    "dataDeAbertura": "03/07/2024",
+    "_id": "668cbc93239289e4d5530808",
+    "__v": 0
+  },
+  {
+    "cnpj": "55826404000120",
+    "razaoSocial": "55.826.404 JHONATA SANTOS SILVA",
+    "nomeFantasia": "-",
+    "email": "JHONATASILVACONTATO@GMAIL.COM",
+    "telefones": [
+      "73 982497027"
+    ],
+    "dataDeAbertura": "05/07/2024",
+    "_id": "668cbc96239289e4d553080b",
+    "__v": 0
+  },
+  {
+    "cnpj": "55845558000160",
+    "razaoSocial": "55.845.558 JOSE ANGELO STOCCO FOLLE",
+    "nomeFantasia": "-",
+    "email": "CAPITALCONTABILIDADEPS@GMAIL.COM",
+    "telefones": [
+      "73 998573014"
+    ],
+    "dataDeAbertura": "08/07/2024",
+    "_id": "668cbc96239289e4d553080e",
+    "__v": 0
+  },
+  {
+    "cnpj": "55844978000121",
+    "razaoSocial": "55.844.978 GERALDO DE ASSIS ALVES",
+    "nomeFantasia": "-",
+    "email": "GERALDO.ALVES78@GMAIL.COM",
+    "telefones": [
+      "33 984011170"
+    ],
+    "dataDeAbertura": "08/07/2024",
+    "_id": "668cbc98239289e4d5530811",
+    "__v": 0
+  }
+]
