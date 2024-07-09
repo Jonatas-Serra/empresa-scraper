@@ -1,0 +1,7 @@
+{
+  "ignore": [
+    "lastProcessed.json",
+    "logs/*"
+  ],
+  "ext": "js,json"
+}

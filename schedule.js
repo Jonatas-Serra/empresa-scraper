@@ -1,5 +1,6 @@
 const cron = require('node-cron');
 const axios = require('axios');
+const fs = require('fs');
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const cities = [
@@ -9,6 +10,19 @@ const cities = [
   "VITORIA DA CONQUISTA", "ITAPETINGA", "ITORORO", "PAU BRASIL", "ITAPEBI",
   "PRADO", "LACERDA", "MASCOTE", "JUCURUCU", "IPUPIARA"
 ];
+
+const getLastProcessed = () => {
+  if (fs.existsSync('lastProcessed.json')) {
+    const data = fs.readFileSync('lastProcessed.json');
+    return JSON.parse(data);
+  }
+  return { date: "2024-01-01", cityIndex: 0 };
+};
+
+const saveLastProcessed = (date, cityIndex) => {
+  const data = { date, cityIndex };
+  fs.writeFileSync('lastProcessed.json', JSON.stringify(data));
+};
 
 const fetchAndSaveCompaniesForCity = async (city, date) => {
   try {
@@ -45,16 +59,19 @@ const fetchAndSaveCompaniesForCity = async (city, date) => {
 };
 
 const scheduleFetchCompanies = async () => {
-  const startDate = new Date("2024-01-01");
-  const endDate = new Date("2024-07-09");
   const oneDay = 24 * 60 * 60 * 1000;
+  let { date, cityIndex } = getLastProcessed();
+  let currentDate = new Date(date);
 
-  for (let date = startDate; date <= endDate; date = new Date(date.getTime() + oneDay)) {
-    const formattedDate = date.toISOString().split('T')[0];
-    for (const city of cities) {
-      await fetchAndSaveCompaniesForCity(city, formattedDate);
+  while (currentDate <= new Date("2024-07-09")) {
+    const formattedDate = currentDate.toISOString().split('T')[0];
+    for (; cityIndex < cities.length; cityIndex++) {
+      await fetchAndSaveCompaniesForCity(cities[cityIndex], formattedDate);
+      saveLastProcessed(formattedDate, cityIndex);
       await delay(10000); // Delay de 10 segundos entre cidades
     }
+    cityIndex = 0; // Reset city index after a day is processed
+    currentDate = new Date(currentDate.getTime() + oneDay);
   }
 };
 
