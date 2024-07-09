@@ -43,11 +43,11 @@ const scrapeCompanyData = async (url, cookies) => {
     razaoSocial: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(3) > p').text().trim() || 'Não encontrado',
     nomeFantasia: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(4) > p').text().trim() || 'Não encontrado',
     data_de_abertura: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(6) > p > a').text().trim() || 'Não encontrado',
-    email: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(19) > p > a').text().trim() || 'Não encontrado',
-    telefones: [
-      $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(20) > p > a').text().trim(),
-      $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(20) > p:nth-child(3) > a').text().trim()
-    ].filter(t => t)
+    naturezaJuridica: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(8) > p').text().trim() || 'Não encontrado',
+    municipio: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(17) > p > a').text().trim() || 'Não encontrado',
+    estado: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(18) > p > a').text().trim() || 'Não encontrado',
+    cnaePrincipal: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(21) > p').text().trim() || 'Não encontrado',
+    cnaesSecundarios: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(22) > p').text().trim() ? $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(22) > p').text().trim().split(',') : []
   };
 
   return companyDetails;
@@ -58,7 +58,7 @@ const formatUrl = (razaoSocial, cnpj) => {
 };
 
 const searchAndScrapeCompanies = async (req, res) => {
-  const { startDate, endDate, cookies } = req.body;
+  const { startDate, endDate, cookies, city } = req.body;
 
   const query = {
     "query": {
@@ -66,7 +66,7 @@ const searchAndScrapeCompanies = async (req, res) => {
       "atividade_principal": [],
       "natureza_juridica": [],
       "uf": ["BA"],
-      "municipio": ["SALVADOR"],
+      "municipio": [city],
       "bairro": [],
       "situacao_cadastral": "ATIVA",
       "cep": [],
@@ -143,7 +143,6 @@ const searchAndScrapeCompanies = async (req, res) => {
 };
 
 const processAndSaveCompanies = async (companyData, cookies, allCompanies) => {
-  // Verificar CNPJs que já existem no banco de dados
   const existingCNPJs = await Empresa.find({ cnpj: { $in: companyData.map(company => company.cnpj) } }).select('cnpj');
   const existingCNPJSet = new Set(existingCNPJs.map(company => company.cnpj));
 
@@ -163,7 +162,12 @@ const processAndSaveCompanies = async (companyData, cookies, allCompanies) => {
           nomeFantasia: companyDetails.nomeFantasia,
           email: companyDetails.email,
           telefones: companyDetails.telefones,
-          dataDeAbertura: companyDetails.data_de_abertura
+          dataDeAbertura: companyDetails.data_de_abertura,
+          naturezaJuridica: companyDetails.naturezaJuridica,
+          municipio: companyDetails.municipio,
+          estado: companyDetails.estado,
+          cnaePrincipal: companyDetails.cnaePrincipal,
+          cnaesSecundarios: companyDetails.cnaesSecundarios
         });
 
         try {
