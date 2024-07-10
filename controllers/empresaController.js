@@ -57,6 +57,7 @@ const scrapeCompanyData = async (url, cookies) => {
 const formatUrl = (razaoSocial, cnpj) => {
   return `https://casadosdados.com.br/solucao/cnpj/${razaoSocial.toLowerCase().replace(/ /g, '-').replace(/&/g, 'and').replace(/---/g, '-').replace(/[()]/g, '').replace(/[^\w-]/g, '')}-${cnpj}`;
 };
+
 const searchAndScrapeCompanies = async (req, res) => {
   const { startDate, endDate, cookies, city } = req.body;
 
@@ -217,3 +218,4 @@ const getCompaniesCount = async (req, res) => {
 };
 
 module.exports = { searchAndScrapeCompanies, getSavedCompanies, getCompaniesCount };
+

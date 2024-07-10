@@ -19,11 +19,11 @@ const getLastProcessed = () => {
     const data = fs.readFileSync('lastProcessed.json');
     return JSON.parse(data);
   }
-  return { date: "2023-01-01", cityIndex: 0 };
+  return { date: "2023-01-01", cityIndex: 0, cityGroupIndex: 0 };
 };
 
-const saveLastProcessed = (date, cityIndex) => {
-  const data = { date, cityIndex };
+const saveLastProcessed = (date, cityGroupIndex, cityIndex) => {
+  const data = { date, cityGroupIndex, cityIndex };
   fs.writeFileSync('lastProcessed.json', JSON.stringify(data));
 };
 
@@ -34,26 +34,7 @@ const fetchAndSaveCompaniesForCity = async (city, date) => {
       startDate: date,
       endDate: date,
       cookies: cookies,
-      city: city,
-      query: {
-        "query": {
-          "uf": ["BA"],
-          "municipio": [city],
-          "situacao_cadastral": "ATIVA"
-        },
-        "extras": {
-          "somente_mei": false,
-          "excluir_mei": false,
-          "com_email": true,
-          "incluir_atividade_secundaria": false,
-          "com_contato_telefonico": true,
-          "somente_fixo": false,
-          "somente_celular": true,
-          "somente_matriz": false,
-          "somente_filial": false
-        },
-        "page": 1
-      }
+      city: city
     });
     console.log(`Empresas salvas para ${city} em ${date}:`, response.data);
   } catch (error) {
@@ -62,19 +43,22 @@ const fetchAndSaveCompaniesForCity = async (city, date) => {
 };
 
 const scheduleFetchCompanies = async () => {
-  const twodays = 48 * 60 * 60 * 1000;
-  let { date, cityIndex } = getLastProcessed();
+  const twoDays = 2 * 24 * 60 * 60 * 1000;
+  let { date, cityIndex, cityGroupIndex } = getLastProcessed();
   let currentDate = new Date(date);
 
   while (currentDate <= new Date("2024-07-09")) {
     const formattedDate = currentDate.toISOString().split('T')[0];
-    for (; cityIndex < cities.length; cityIndex++) {
-      await fetchAndSaveCompaniesForCity(cities[cityIndex], formattedDate);
-      saveLastProcessed(formattedDate, cityIndex);
-      await delay(10000); // Delay de 10 segundos entre cidades
+    for (; cityGroupIndex < cities.length; cityGroupIndex++) {
+      for (; cityIndex < cities[cityGroupIndex].length; cityIndex++) {
+        await fetchAndSaveCompaniesForCity(cities[cityGroupIndex][cityIndex], formattedDate);
+        saveLastProcessed(formattedDate, cityGroupIndex, cityIndex);
+        await delay(10000); // Delay de 10 segundos entre cidades
+      }
+      cityIndex = 0; // Reset city index after a group is processed
     }
-    cityIndex = 0; // Reset city index after a day is processed
-    currentDate = new Date(currentDate.getTime() + twodays);
+    cityGroupIndex = 0; // Reset city group index after two days are processed
+    currentDate = new Date(currentDate.getTime() + twoDays);
   }
 };
 

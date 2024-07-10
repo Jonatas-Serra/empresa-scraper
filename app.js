@@ -1,7 +1,7 @@
 const express = require('express');
 const connectDB = require('./config/db');
 const empresaRoutes = require('./routes/empresaRoutes');
-const scheduleFetchCompanies = require('./schedule');
+const scheduleFetchCompanies = require('./services/schedule');
 require('dotenv').config();
 
 const app = express();
