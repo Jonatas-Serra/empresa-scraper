@@ -12,7 +12,7 @@ const scheduleFetchCompanies = () => {
 
   const fetchAndSaveCompaniesForCity = async (city) => {
     try {
-      const cookies = ["cf_clearance=iRVDtQQPlPjL.mllkriV4Pi7ZJqoVDeDiSvRokJfvxs-1720125706-1.0.1.1-g3iuWo4x8O.E.ikDAwP2drxmK0KDtTlul3m5axaRiaCBAqLolEkWOjwG.912KW3cEXkJ4bPrL5KduNYVeuYlQg"];
+      const cookies = [process.env.COOKIE];
       const today = new Date().toISOString().split('T')[0];
       const response = await axios.post('http://localhost:3333/api/search-and-scrape-companies', {
         startDate: today,

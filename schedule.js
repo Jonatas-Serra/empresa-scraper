@@ -4,11 +4,14 @@ const fs = require('fs');
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const cities = [
-  "PORTO SEGURO", "EUNAPOLIS", "SANTA CRUZ CABRALIA", "ITABELA", "ITAMARAJU",
-  "GUARATINGA", "BELMONTE", "NOVA VICOSA", "MUCURI", "TEIXEIRA DE FREITAS",
-  "ALCINOPOLIS", "ITAGIMIRIM", "CAMACAN", "UNA", "CANAVIEIRAS", "ILHEUS",
-  "VITORIA DA CONQUISTA", "ITAPETINGA", "ITORORO", "PAU BRASIL", "ITAPEBI",
-  "PRADO", "LACERDA", "MASCOTE", "JUCURUCU", "IPUPIARA"
+  ["ITABUNA", "JUSSARI", "NOVA VICOSA", "ITACARE"],
+  ["ILHEUS", "BUERAREMA", "CAMACAN", "BELMONTE"],
+  ["TEIXEIRA DE FREITAS", "PRADO", "SANTA CRUZ CABRALIA", "UBAITABA"],
+  ["EUNAPOLIS", "URUCUCA", "GANDU", "UNA"],
+  ["PORTO SEGURO", "ITAMARAJU", "IPIAU", "CANAVIEIRAS"],
+  ["VALENCA", "UN", "VALENCA", "IPIAU"],
+  ["JEQUIE", "GANDU", "UNA", "SANTA CRUZ CABRALIA"],
+  ["ITAPETINGA", "GANDU", "BUERAREMA", "JUSSARI"]
 ];
 
 const getLastProcessed = () => {
@@ -16,7 +19,7 @@ const getLastProcessed = () => {
     const data = fs.readFileSync('lastProcessed.json');
     return JSON.parse(data);
   }
-  return { date: "2024-01-01", cityIndex: 0 };
+  return { date: "2023-01-01", cityIndex: 0 };
 };
 
 const saveLastProcessed = (date, cityIndex) => {
@@ -59,7 +62,7 @@ const fetchAndSaveCompaniesForCity = async (city, date) => {
 };
 
 const scheduleFetchCompanies = async () => {
-  const oneDay = 24 * 60 * 60 * 1000;
+  const twodays = 48 * 60 * 60 * 1000;
   let { date, cityIndex } = getLastProcessed();
   let currentDate = new Date(date);
 
@@ -71,7 +74,7 @@ const scheduleFetchCompanies = async () => {
       await delay(10000); // Delay de 10 segundos entre cidades
     }
     cityIndex = 0; // Reset city index after a day is processed
-    currentDate = new Date(currentDate.getTime() + oneDay);
+    currentDate = new Date(currentDate.getTime() + twodays);
   }
 };
 

@@ -39,6 +39,7 @@ const scrapeCompanyData = async (url, cookies) => {
   const $ = cheerio.load(response.data);
 
   const companyDetails = {
+    EmpresaMEI: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(9) > p').text().trim() || 'Não encontrado',
     cnpj: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(2) > p').text().trim() || 'Não encontrado',
     razaoSocial: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(3) > p').text().trim() || 'Não encontrado',
     nomeFantasia: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(4) > p').text().trim() || 'Não encontrado',
