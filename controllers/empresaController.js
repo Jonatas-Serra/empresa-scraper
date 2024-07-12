@@ -39,7 +39,7 @@ const scrapeCompanyData = async (url, cookies) => {
   const $ = cheerio.load(response.data);
 
   const companyDetails = {
-    EmpresaMEI: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(9) > p').text().trim() || 'Não encontrado',
+    empresaMEI: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(9) > p').text().trim() === 'Sim' ? 'Sim' : 'Não',
     cnpj: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(2) > p').text().trim() || 'Não encontrado',
     razaoSocial: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(3) > p').text().trim() || 'Não encontrado',
     nomeFantasia: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(4) > p').text().trim() || 'Não encontrado',
@@ -48,7 +48,11 @@ const scrapeCompanyData = async (url, cookies) => {
     municipio: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(17) > p > a').text().trim() || 'Não encontrado',
     estado: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(18) > p > a').text().trim() || 'Não encontrado',
     cnaePrincipal: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(21) > p').text().trim() || 'Não encontrado',
-    cnaesSecundarios: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(22) > p').text().trim() ? $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(22) > p').text().trim().split(',') : []
+    cnaesSecundarios: $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(22) > p').text().trim() ? $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(22) > p').text().trim().split(',') : [],
+    telefones: [
+      $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(20) > p:nth-child(2) > a').text().trim(),
+      $('#__nuxt > div > section:nth-child(5) > div:nth-child(2) > div.column.is-7.is-offset-2 > div > div:nth-child(20) > p:nth-child(3) > a').text().trim()
+    ].filter(telefone => telefone !== '')
   };
 
   return companyDetails;
@@ -161,14 +165,15 @@ const processAndSaveCompanies = async (companyData, cookies, allCompanies) => {
           cnpj: company.cnpj,
           razaoSocial: companyDetails.razaoSocial,
           nomeFantasia: companyDetails.nomeFantasia,
-          email: companyDetails.email,
+          email: company.email,
           telefones: companyDetails.telefones,
           dataDeAbertura: companyDetails.data_de_abertura,
           naturezaJuridica: companyDetails.naturezaJuridica,
           municipio: companyDetails.municipio,
           estado: companyDetails.estado,
           cnaePrincipal: companyDetails.cnaePrincipal,
-          cnaesSecundarios: companyDetails.cnaesSecundarios
+          cnaesSecundarios: companyDetails.cnaesSecundarios,
+          empresaMEI: companyDetails.empresaMEI
         });
 
         try {
