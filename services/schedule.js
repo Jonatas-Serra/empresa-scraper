@@ -63,7 +63,7 @@ const saveLastProcessed = (date, cityGroupIndex, cityIndex) => {
 const fetchAndSaveCompaniesForCity = async (city, date) => {
   try {
     const cookies = ["cf_clearance=iRVDtQQPlPjL.mllkriV4Pi7ZJqoVDeDiSvRokJfvxs-1720125706-1.0.1.1-g3iuWo4x8O.E.ikDAwP2drxmK0KDtTlul3m5axaRiaCBAqLolEkWOjwG.912KW3cEXkJ4bPrL5KduNYVeuYlQg"];
-    const response = await axios.post('http://localhost:3333/scrape/search-and-scrape-companies', {
+    const response = await axios.post('https://empresa-scraper-1.onrender.com/scrape/search-and-scrape-companies', {
       startDate: date,
       endDate: date,
       cookies: cookies,
