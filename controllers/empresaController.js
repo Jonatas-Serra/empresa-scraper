@@ -8,7 +8,7 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 let requestCount = 0;
 
-const retryFetch = async (fetchFunction, args, maxRetries = 5, delayMs = 2000) => {
+const retryFetch = async (fetchFunction, args, maxRetries = 500, delayMs = 10000) => {
   let attempt = 0;
   while (attempt < maxRetries) {
     try {
