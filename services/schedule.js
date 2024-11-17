@@ -75,7 +75,7 @@ const fetchAndSaveCompaniesForCity = async (city, date) => {
 };
 
 const scheduleFetchCompanies = async () => {
-  const twoDays = 2 * 24 * 60 * 60 * 1000;
+  const fiveDays = 5 * 24 * 60 * 60 * 1000;
   let { date, cityIndex, cityGroupIndex } = getLastProcessed();
   let currentDate = new Date(date);
 
@@ -90,7 +90,7 @@ const scheduleFetchCompanies = async () => {
       cityIndex = 0; // Reset city index after a group is processed
     }
     cityGroupIndex = 0; // Reset city group index after two days are processed
-    currentDate = new Date(currentDate.getTime() + twoDays);
+    currentDate = new Date(currentDate.getTime() + fiveDays);
   }
 };
 
