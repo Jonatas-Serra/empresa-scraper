@@ -79,7 +79,7 @@ const scheduleFetchCompanies = async () => {
   let { date, cityIndex, cityGroupIndex } = getLastProcessed();
   let currentDate = new Date(date);
 
-  while (currentDate <= new Date("2024-11-16")) {
+  while (currentDate <= new Date("2023-01-01")) {
     const formattedDate = currentDate.toISOString().split('T')[0];
     for (; cityGroupIndex < cities.length; cityGroupIndex++) {
       for (; cityIndex < cities[cityGroupIndex].length; cityIndex++) {
